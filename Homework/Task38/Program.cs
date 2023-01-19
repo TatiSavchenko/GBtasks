@@ -8,7 +8,7 @@ double [] array = GetArray(8);
 PrintArray(array);
 Console.WriteLine();
 double diff = GetDif(array);
-Console.WriteLine($"difference between max and min = {diff} ");
+Console.WriteLine($"difference between max and min = {diff:f2}");
 
 
 
@@ -28,9 +28,9 @@ void PrintArray(double [] arr)
     Console.Write($"[");
     for(int i=0; i<arr.Length-1; i++)
     {
-        Console.Write($" {arr[i]} ");
+        Console.Write($" {arr[i]:f2} ");
     }
-    Console.Write($"{arr[arr.Length-1]}]");
+    Console.Write($"{arr[arr.Length-1]:f2}]");
 }
 
 double GetDif(double[] arr2)
@@ -52,13 +52,24 @@ double GetDif(double[] arr2)
         
         difference = max - min;
     }
-Console.WriteLine($"max = {max}");
-Console.WriteLine($"min = {min}");
+Console.WriteLine($"max = {max:f2}");
+Console.WriteLine($"min = {min:f2}");
     return difference;
 }
 
 
+// double[,] a = new double[5, 10];
 
+// Random random = new Random();
+// for (int i = 0; i < 5; i++)
+// {
+//     for (int j = 0; j < 10; j++)
+//     {
+//         a[i, j] = random.NextDouble() * 100; // NextDouble() дает случайное вещественное число в диапазоне от 0 до 1
+//         Console.Write("{0,6:F2}", a[i, j]);
+//     }
+//     Console.WriteLine();
+// }
 
 
 
