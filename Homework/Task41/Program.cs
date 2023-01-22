@@ -4,7 +4,7 @@
 // 1, -7, 567, 89, 223-> 3
 
 Console.Clear();
-Console.WriteLine("Input numbers: ");
+Console.WriteLine("Input numbers separated by commas: ");
 string[] parameters = Console.ReadLine()!.Split( ",", StringSplitOptions.RemoveEmptyEntries); 
 
 GetResult(parameters);
