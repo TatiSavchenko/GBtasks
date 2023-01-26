@@ -35,6 +35,8 @@ public class Methods
     }
     return ArrayMatrix;
 }
+ 
+ 
     ///<summary>
     ///Method Double PrintMatrixArray
     ///</summary>
@@ -50,5 +52,24 @@ public class Methods
     }
     
 }
+    
+    
+    ///<summary>
+    ///Method PrintMatrixArray
+    ///</summary>
+public static void PrintMatrixArray(int[,] inArray)
+{
+    for(int i=0; i<inArray.GetLength(0); i++)
+    {
+        for(int j=0; j<inArray.GetLength(1); j++)
+        {
+            Console.Write($"{inArray[i,j],5} ");
+        }
+        Console.WriteLine();
+    }
+    
+}
+
+
 
 }
